@@ -703,19 +703,44 @@ function step() {
       nextT += beat; stepI++;
     }
   }
+  function ensure() {
+    if (ac) return;
+    ac = new (window.AudioContext || window.webkitAudioContext)();
+    master = ac.createGain(); master.gain.value = .5;
+    const lp = ac.createBiquadFilter(); lp.type = "lowpass"; lp.frequency.value = 2400;
+    master.connect(lp); lp.connect(ac.destination);
+  }
+  function setUI() {
+    btn.classList.toggle("on", on); btn.setAttribute("aria-pressed", on);
+    btn.setAttribute("aria-label", on ? "Tắt nhạc nền" : "Bật nhạc nền");
+  }
+  async function start() {
+    ensure();
+    // resume() có thể treo khi trình duyệt chưa cho phát, nên chỉ chờ tối đa 400 ms
+    await Promise.race([ac.resume(), new Promise(r => setTimeout(r, 400))]);
+    if (ac.state !== "running") return false;
+    if (!on) { on = true; nextT = ac.currentTime + .05; timer = setInterval(schedule, 100); }
+    setUI(); return true;
+  }
+  async function stop() {
+    on = false; clearInterval(timer);
+    if (ac) await ac.suspend();
+    setUI();
+  }
+  // Tự phát khi mở trang. Trình duyệt chặn âm thanh trước lần chạm đầu tiên,
+  // nên nếu bị chặn, nhạc sẽ bắt đầu ngay ở lần chạm, bấm hoặc gõ phím đầu tiên.
+  let userStopped = false;
+  const unlockEvents = ["pointerdown", "touchend", "keydown"];
+  function unlock(e) {
+    if (userStopped || btn.contains(e.target)) return;
+    start().then(ok => { if (ok) unlockEvents.forEach(ev => removeEventListener(ev, unlock, true)); }).catch(() => {});
+  }
+  unlockEvents.forEach(ev => addEventListener(ev, unlock, true));
+  start().then(ok => { if (ok) unlockEvents.forEach(ev => removeEventListener(ev, unlock, true)); }).catch(() => {});
   btn.addEventListener("click", async () => {
     try {
-      if (!ac) {
-        ac = new (window.AudioContext || window.webkitAudioContext)();
-        master = ac.createGain(); master.gain.value = .5;
-        const lp = ac.createBiquadFilter(); lp.type = "lowpass"; lp.frequency.value = 2400;
-        master.connect(lp); lp.connect(ac.destination);
-      }
-      on = !on;
-      if (on) { await ac.resume(); nextT = ac.currentTime + .05; timer = setInterval(schedule, 100); }
-      else { clearInterval(timer); await ac.suspend(); }
-      btn.classList.toggle("on", on); btn.setAttribute("aria-pressed", on);
-      btn.setAttribute("aria-label", on ? "Tắt nhạc nền" : "Bật nhạc nền");
+      if (on) { userStopped = true; await stop(); }
+      else { userStopped = false; if (!(await start())) toast("Trình duyệt này chưa phát được nhạc"); }
     } catch (err) { toast("Trình duyệt này chưa phát được nhạc"); }
   });
 })();
