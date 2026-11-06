@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thư mời 20/11 Dị ứng – MDLS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Tông y khoa: nền hồng phấn, mực xanh ngọc đậm, điểm vàng lễ hội; họa tiết ống nghe, kháng thể, ADN.
+     Bố cục: một cột dọc như tấm thiệp điện thoại, các phần nối nhau bằng đường điện tim. */
+  --paper: #fff6f7;
+  --blush: #fbe6ea;
+  --card: #ffffff;
+  --ink: #123532;
+  --muted: #5d6f6d;
+  --teal: #0e7c77;
+  --rose: #c25a6e;
+  --mint: #d7eee9;
+  --gold: #b8913f;
+  --line: #f0d3d9;
+  --display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --script: "Dancing Script", "Brush Script MT", cursive;
+  --body: "Be Vietnam Pro", "Segoe UI", Roboto, Arial, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #f5dfe4;
+  background-image: radial-gradient(circle at 20% 10%, #fbeef1 0, transparent 40%), radial-gradient(circle at 80% 90%, #f9e8ec 0, transparent 45%);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.6;
+}
+img { max-width: 100%; display: block; }
+h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 700; }
+p { margin: 0; }
+[hidden] { display: none !important; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+
+.card {
+  max-width: 440px;
+  margin: 0 auto;
+  background-color: var(--paper);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240' fill='none' stroke='%23c97b8b' stroke-opacity='.18' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E %3Cg transform='translate(18 20) scale(1.5)'%3E%3Cpath d='M5 2v2M11 2v2'/%3E%3Cpath d='M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1'/%3E%3Cpath d='M8 15a6 6 0 0 0 12 0v-3'/%3E%3Ccircle cx='20' cy='10' r='2'/%3E%3C/g%3E %3Cg transform='translate(150 30) scale(1.4)'%3E%3Cpath d='M11 21v-8L5.5 4.5'/%3E%3Cpath d='M13 21v-8l5.5-8.5'/%3E%3Cpath d='M8.6 10.2 4.5 6.8M15.4 10.2l4.1-3.4'/%3E%3C/g%3E %3Cg transform='translate(92 100) scale(1.3)'%3E%3Cpath d='M7 2c0 5 10 5 10 10S7 17 7 22'/%3E%3Cpath d='M17 2c0 5-10 5-10 10s10 5 10 10'/%3E%3Cpath d='M9 5h6M8.5 9h7M8.5 15h7M9 19h6'/%3E%3C/g%3E %3Cg transform='translate(20 150) scale(1.3)'%3E%3Crect x='3' y='9' width='18' height='6' rx='3' transform='rotate(-45 12 12)'/%3E%3Cpath d='M9.9 14.1 14.1 9.9'/%3E%3C/g%3E %3Cg transform='translate(170 160) scale(1.2)'%3E%3Cpath d='M9 3h6v6h6v6h-6v6H9v-6H3V9h6z'/%3E%3C/g%3E %3Cg transform='translate(96 200) scale(1.2)'%3E%3Cpath d='M2 12h5l2-5 3 10 2-5h8'/%3E%3C/g%3E %3C/svg%3E");
+  background-size: 240px 240px;
+  min-height: 100%;
+  box-shadow: 0 0 60px rgba(194, 90, 110, .16);
+  overflow: hidden;
+  position: relative;
+}
+section { padding: 44px 24px; position: relative; display: grid; gap: 18px; }
+.eyebrow {
+  font-size: 12px; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--teal); font-weight: 600; text-align: center;
+}
+.title {
+  font-family: var(--display); font-size: 28px; line-height: 1.25; text-align: center; color: var(--ink);
+}
+.script { font-family: var(--script); color: var(--teal); }
+.center { text-align: center; }
+.muted { color: var(--muted); }
+
+/* ===== Hero ===== */
+.hero { padding-top: 28px; padding-bottom: 36px; gap: 20px; background: linear-gradient(180deg, var(--blush) 0%, rgba(255, 246, 247, .6) 70%); }
+.hosts { display: grid; grid-template-columns: 1fr auto 1fr; gap: 10px; align-items: start; font-size: 11px; line-height: 1.4; color: var(--muted); text-align: center; }
+.hosts > div { display: grid; justify-items: center; gap: 2px; }
+.logo { width: 66px; height: 66px; border-radius: 50%; background: var(--card); display: grid; place-items: center; box-shadow: 0 4px 14px rgba(194, 90, 110, .18); margin-bottom: 6px; }
+.logo img { max-width: 50px; max-height: 50px; }
+.hosts b { display: block; color: var(--ink); font-weight: 600; font-size: 11.5px; }
+.hosts .sep { width: 1px; height: 96px; background: var(--line); }
+.hero .letter { font-size: 64px; line-height: 1; text-align: center; margin-top: 6px; animation: rise .9s ease-out both; }
+.dear { text-align: center; font-size: 15px; color: var(--muted); }
+.dear strong { display: block; font-family: var(--display); font-size: 24px; color: var(--ink); font-weight: 500; font-style: italic; margin-top: 2px; }
+.frame {
+  position: relative; margin: 4px auto 0; width: 100%;
+  border-radius: 180px 180px 18px 18px; overflow: hidden;
+  border: 6px solid var(--card); box-shadow: 0 14px 34px rgba(18, 53, 50, .18);
+  aspect-ratio: 4 / 4.4; animation: rise 1.1s .15s ease-out both;
+}
+.frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
+.frame figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 30px 12px 10px;
+  background: linear-gradient(transparent, rgba(10, 40, 38, .7)); color: #fff; font-size: 12px; text-align: center;
+}
+.occasion { text-align: center; display: grid; gap: 6px; }
+.occasion .small { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--teal); font-weight: 600; }
+.occasion h1 { font-family: var(--display); font-size: 31px; line-height: 1.2; }
+.occasion .years { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.datebar {
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; text-align: center;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 12px 0;
+}
+.datebar .side { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.datebar .big { font-family: var(--display); font-size: 44px; line-height: 1; color: var(--teal); padding: 0 18px; border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
+.datebar .big small { display: block; font-family: var(--body); font-size: 12px; letter-spacing: .2em; color: var(--ink); margin-top: 6px; }
+
+/* ===== ECG divider ===== */
+.ecg { display: block; width: 100%; height: 34px; color: var(--teal); }
+.ecg path { fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.ecg .heart { fill: var(--gold); stroke: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .ecg .pulse { stroke-dasharray: 520; stroke-dashoffset: 520; animation: draw 3.2s ease-in-out infinite; }
+}
+.ecg .pulse { opacity: .9; }
+
+/* ===== Medical ornaments ===== */
+.medrow { display: flex; justify-content: center; align-items: center; gap: 16px; color: var(--teal); }
+.medrow svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.medrow svg:nth-child(even) { color: var(--rose); }
+.medrow .dotsep { width: 4px; height: 4px; border-radius: 50%; background: var(--line); }
+.eyebrow svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; vertical-align: -3px; margin-right: 6px; }
+.prog .dot { display: grid; place-items: center; }
+.prog .dot::after { content: ""; width: 6px; height: 6px; background: var(--rose); clip-path: polygon(33% 0, 67% 0, 67% 33%, 100% 33%, 100% 67%, 67% 67%, 67% 100%, 33% 100%, 33% 67%, 0 67%, 0 33%, 33% 33%); }
+.steth-art { width: 150px; margin: 0 auto; color: var(--teal); }
+.steth-art path, .steth-art circle { fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.steth-art .hp { fill: var(--rose); stroke: none; }
+
+/* ===== Invitation text ===== */
+.invite p { font-size: 15.5px; text-align: center; max-width: 34ch; margin: 0 auto; }
+.invite .quote {
+  font-family: var(--display); font-style: italic; font-size: 19px; color: var(--teal); line-height: 1.5;
+}
+.invite .src { font-size: 12px; color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+
+/* ===== Calendar ===== */
+.cal { background: var(--card); border-radius: 18px; padding: 18px 16px 14px; border: 1px solid var(--line); }
+.cal-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
+.cal-head h3 { font-family: var(--display); font-size: 20px; }
+.cal-head span { font-size: 12px; color: var(--muted); }
+.cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center; font-variant-numeric: tabular-nums; }
+.cal-grid .dow { font-size: 11px; font-weight: 600; color: var(--muted); padding-bottom: 4px; }
+.cal-grid .d { font-size: 14px; padding: 7px 0; border-radius: 10px; position: relative; }
+.cal-grid .d.sun { color: var(--rose); }
+.cal-grid .d.hit { background: var(--teal); color: #fff; font-weight: 600; }
+.cal-grid .d.hit::after { content: "♥"; position: absolute; top: -7px; right: 2px; font-size: 12px; color: var(--gold); }
+.count { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.count div { background: var(--ink); color: #fff; border-radius: 14px; padding: 12px 4px 10px; text-align: center; }
+.count b { display: block; font-family: var(--display); font-size: 28px; line-height: 1; font-variant-numeric: tabular-nums; }
+.count span { font-size: 11px; letter-spacing: .08em; color: #bfe0db; }
+.count-note { font-size: 13px; text-align: center; color: var(--muted); }
+
+/* ===== Program ===== */
+.prog { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.prog li { display: grid; grid-template-columns: 92px 22px 1fr; gap: 10px; align-items: start; }
+.prog .time { font-family: var(--display); font-size: 17px; color: var(--teal); text-align: right; padding-top: 2px; font-variant-numeric: tabular-nums; }
+.prog .rail { position: relative; height: 100%; display: flex; justify-content: center; }
+.prog .rail::before { content: ""; position: absolute; top: 12px; bottom: -12px; width: 2px; background: var(--line); }
+.prog li:last-child .rail::before { display: none; }
+.prog .dot { width: 14px; height: 14px; border-radius: 50%; background: var(--card); border: 3px solid var(--teal); margin-top: 6px; position: relative; }
+.prog .what { padding-bottom: 22px; }
+.prog .what h3 { font-size: 16px; font-weight: 600; }
+.prog .what p { font-size: 14px; color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.chips span { font-size: 12.5px; padding: 4px 10px; border-radius: 99px; background: var(--mint); color: var(--ink); }
+.note { font-size: 13px; color: var(--muted); text-align: center; font-style: italic; }
+
+/* ===== Venue ===== */
+.venue { background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+.venue .map { height: 150px; background: #e5f1ee; position: relative; }
+.venue .map svg { width: 100%; height: 100%; display: block; }
+.venue .info { padding: 16px 18px 18px; display: grid; gap: 6px; }
+.venue h3 { font-family: var(--display); font-size: 21px; }
+.venue .addr { font-size: 14.5px; color: var(--muted); }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 20px; border-radius: 99px; border: 0; cursor: pointer; text-decoration: none;
+  background: var(--teal); color: #fff; font-weight: 600; font-size: 15px;
+  transition: transform .15s, background .15s;
+}
+.btn:hover { background: #0b6965; }
+.btn:active { transform: scale(.97); }
+.btn.ghost { background: transparent; color: var(--teal); border: 1.5px solid var(--teal); }
+.btn.ghost:hover { background: var(--mint); }
+.venue .btn { margin-top: 8px; justify-self: start; }
+
+/* ===== Album ===== */
+.album { padding-left: 0; padding-right: 0; }
+.album .eyebrow, .album .title, .album .lead { padding: 0 24px; }
+.lead { font-size: 14.5px; color: var(--muted); text-align: center; }
+.strip {
+  display: grid; grid-auto-flow: column; grid-auto-columns: 78%; gap: 12px;
+  overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 24px 10px; scrollbar-width: none;
+}
+.strip::-webkit-scrollbar { display: none; }
+.strip button {
+  padding: 0; border: 0; background: none; cursor: zoom-in; scroll-snap-align: center;
+  border-radius: 14px; overflow: hidden; aspect-ratio: 4 / 3; box-shadow: 0 8px 20px rgba(18, 53, 50, .14);
+}
+.strip img { width: 100%; height: 100%; object-fit: cover; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 0 24px; }
+.grid2 button { padding: 0; border: 0; background: none; cursor: zoom-in; border-radius: 12px; overflow: hidden; aspect-ratio: 1; }
+.grid2 img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+.grid2 button:hover img { transform: scale(1.04); }
+.swipe-hint { font-size: 12px; text-align: center; color: var(--muted); }
+
+.lightbox {
+  position: fixed; inset: 0; z-index: 50; background: rgba(6, 24, 23, .92);
+  display: none; align-items: center; justify-content: center; padding: 16px;
+}
+.lightbox.open { display: flex; }
+.lightbox img { max-height: 86%; border-radius: 10px; }
+.lightbox .close, .lightbox .nav {
+  position: absolute; background: rgba(255, 255, 255, .14); color: #fff; border: 0; width: 44px; height: 44px;
+  border-radius: 50%; font-size: 22px; cursor: pointer;
+}
+.lightbox .close { top: 16px; right: 16px; }
+.lightbox .prev { left: 12px; top: 50%; transform: translateY(-50%); }
+.lightbox .next { right: 12px; top: 50%; transform: translateY(-50%); }
+
+/* ===== RSVP ===== */
+.rsvp { background: linear-gradient(180deg, rgba(255, 246, 247, 0), var(--blush)); }
+form { display: grid; gap: 14px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px 18px; }
+label { font-size: 13.5px; font-weight: 600; display: grid; gap: 6px; }
+input[type="text"], select, textarea {
+  width: 100%; border: 1.5px solid var(--line); border-radius: 12px; padding: 11px 12px; background: var(--paper);
+  font-weight: 400; font-size: 15px;
+}
+input[type="text"]:focus, select:focus, textarea:focus { border-color: var(--teal); outline: none; }
+textarea { min-height: 84px; resize: vertical; }
+.choice { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.choice input { position: absolute; opacity: 0; pointer-events: none; }
+.choice label {
+  font-weight: 500; display: block; text-align: center; padding: 11px 6px; border: 1.5px solid var(--line);
+  border-radius: 12px; cursor: pointer; font-size: 14px;
+}
+.choice input:checked + label { border-color: var(--teal); background: var(--mint); color: var(--ink); font-weight: 600; }
+.choice input:focus-visible + label { outline: 2px solid var(--teal); outline-offset: 2px; }
+fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 6px; }
+legend { font-size: 13.5px; font-weight: 600; padding: 0; margin-bottom: 6px; }
+form .btn { width: 100%; }
+.result { display: none; background: var(--mint); border-radius: 14px; padding: 14px; font-size: 14px; gap: 10px; }
+.result.show { display: grid; }
+.result pre { white-space: pre-wrap; font-family: var(--body); margin: 0; background: var(--card); border-radius: 10px; padding: 10px 12px; font-size: 13.5px; }
+
+/* ===== Footer ===== */
+.thanks { text-align: center; padding-bottom: 96px; background: var(--ink); color: #e8f4f2; gap: 14px; }
+.thanks .script { color: #9fd8cf; font-size: 46px; line-height: 1.1; }
+.thanks p { font-size: 14.5px; max-width: 32ch; margin: 0 auto; color: #c7e2de; }
+.thanks .hostline { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #8fb8b2; line-height: 1.7; }
+.thanks .logos { display: flex; justify-content: center; gap: 14px; }
+.thanks .logos .logo { box-shadow: none; margin: 0; }
+.thanks .btn.ghost { color: #e8f4f2; border-color: #4d7d78; justify-self: center; }
+.thanks .btn.ghost:hover { background: rgba(255, 255, 255, .08); }
+
+/* ===== Floating controls ===== */
+.fab { position: fixed; right: max(16px, calc(50% - 220px + 16px)); bottom: 18px; z-index: 40; display: grid; gap: 10px; }
+.fab button {
+  width: 52px; height: 52px; border-radius: 50%; border: 0; cursor: pointer;
+  background: var(--card); color: var(--teal); box-shadow: 0 8px 20px rgba(18, 53, 50, .22);
+  display: grid; place-items: center; position: relative;
+}
+.fab button svg { width: 24px; height: 24px; }
+.fab .flower { background: var(--teal); color: #fff; }
+.fab .tag {
+  position: absolute; right: 60px; white-space: nowrap; background: var(--ink); color: #fff;
+  font-size: 12px; padding: 4px 10px; border-radius: 99px; pointer-events: none;
+}
+.fab .music.on svg { animation: spin 4s linear infinite; }
+.fab .flower .badge {
+  position: absolute; top: -4px; right: -4px; background: var(--gold); color: #fff; font-size: 11px; font-weight: 600;
+  min-width: 20px; height: 20px; border-radius: 10px; display: grid; place-items: center; padding: 0 5px;
+}
+canvas#petals { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 45; }
+
+.toast {
+  position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); z-index: 60;
+  background: var(--ink); color: #fff; padding: 10px 16px; border-radius: 12px; font-size: 14px;
+  opacity: 0; transition: opacity .25s; pointer-events: none; max-width: 90vw; text-align: center;
+}
+.toast.show { opacity: 1; }
+
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes draw { 0% { stroke-dashoffset: 520; } 55%, 100% { stroke-dashoffset: 0; } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-steth" viewBox="0 0 24 24"><path d="M5 2v2M11 2v2"/><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></symbol>
+    <symbol id="i-ab" viewBox="0 0 24 24"><path d="M11 21v-8L5.5 4.5"/><path d="M13 21v-8l5.5-8.5"/><path d="M8.6 10.2 4.5 6.8M15.4 10.2l4.1-3.4"/></symbol>
+    <symbol id="i-dna" viewBox="0 0 24 24"><path d="M7 2c0 5 10 5 10 10S7 17 7 22"/><path d="M17 2c0 5-10 5-10 10s10 5 10 10"/><path d="M9 5h6M8.5 9h7M8.5 15h7M9 19h6"/></symbol>
+    <symbol id="i-micro" viewBox="0 0 24 24"><path d="M6 18h8M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></symbol>
+    <symbol id="i-pill" viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="6" rx="3" transform="rotate(-45 12 12)"/><path d="M9.9 14.1 14.1 9.9"/></symbol>
+    <symbol id="i-cross" viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></symbol>
+  </defs>
+</svg>
+<main class="card">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="top">
+    <div class="hosts">
+      <div><span class="logo"><img src="img/logo-ttdu.png" alt="Logo Trung tâm Dị ứng – Miễn dịch lâm sàng"></span><b>Trung tâm Dị ứng – MDLS</b>Bệnh viện Bạch Mai</div>
+      <div class="sep" aria-hidden="true"></div>
+      <div><span class="logo"><img src="img/logo-hmu.png" alt="Logo Trường Đại học Y Hà Nội"></span><b>Bộ môn Dị ứng – MDLS</b>Trường Đại học Y Hà Nội</div>
+    </div>
+
+    <h2 class="letter script">Thư mời</h2>
+
+    <p class="dear">Kính gửi<strong id="guestName">Quý Thầy Cô</strong></p>
+
+    <figure class="frame" style="margin-left:auto;margin-right:auto">
+      <img src="img/group-all.jpg" alt="Thầy cô và học trò chụp ảnh chung tại lễ kỷ niệm 20/11/2023, các thầy cô ngồi hàng đầu cầm hoa">
+      <figcaption>Ngày 20/11/2023, chúng em được đón Thầy Cô</figcaption>
+    </figure>
+
+    <div class="occasion">
+      <span class="small">Gặp mặt tri ân</span>
+      <h1>Kỷ niệm 44 năm<br>Ngày Nhà giáo Việt Nam</h1>
+      <span class="years">20.11.1982 – 20.11.2026</span>
+    </div>
+
+    <div class="datebar">
+      <div class="side">Thứ Năm</div>
+      <div class="big">19<small>THÁNG 11</small></div>
+      <div class="side">17 giờ 30</div>
+    </div>
+  </section>
+
+  <svg class="ecg" viewBox="0 0 440 34" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 17 H150 L160 17 L168 5 L178 30 L186 11 L192 17 H205" />
+    <path class="heart" d="M220 27 C208 19 204 14 204 10 C204 6.5 207 4 210.5 4 C213 4 215 5.5 220 9.5 C225 5.5 227 4 229.5 4 C233 4 236 6.5 236 10 C236 14 232 19 220 27 Z" />
+    <path class="pulse" d="M235 17 H248 L254 17 L262 5 L272 30 L280 11 L286 17 H440" />
+  </svg>
+
+  <!-- ===== Invitation ===== -->
+  <section class="invite">
+    <div class="eyebrow"><svg><use href="#i-steth"/></svg>Lời mời</div>
+    <p>Nhân dịp kỷ niệm 44 năm Ngày Nhà giáo Việt Nam, Trung tâm Dị ứng – Miễn dịch lâm sàng, Bệnh viện Bạch Mai và Bộ môn Dị ứng – Miễn dịch lâm sàng, Trường Đại học Y Hà Nội trân trọng kính mời Thầy Cô tới dự buổi gặp mặt tri ân.</p>
+    <p>Mỗi ca bệnh chúng em xử trí hôm nay đều mang dấu ấn của Thầy Cô, từ những buổi đi buồng đến những lần sửa bệnh án. Được gặp lại Thầy Cô là niềm vui và vinh dự của các thế hệ học trò.</p>
+    <p class="quote">“Muốn sang thì bắc cầu Kiều,<br>Muốn con hay chữ thì yêu lấy thầy.”</p>
+    <p class="src">Ca dao</p>
+    <div class="medrow" aria-hidden="true"><svg><use href="#i-steth"/></svg><span class="dotsep"></span><svg><use href="#i-ab"/></svg><span class="dotsep"></span><svg><use href="#i-dna"/></svg><span class="dotsep"></span><svg><use href="#i-micro"/></svg><span class="dotsep"></span><svg><use href="#i-pill"/></svg><span class="dotsep"></span><svg><use href="#i-cross"/></svg></div>
+  </section>
+
+  <!-- ===== Calendar & countdown ===== -->
+  <section class="when" id="when">
+    <div class="eyebrow"><svg><use href="#i-cross"/></svg>Ngày hẹn</div>
+    <div class="cal">
+      <div class="cal-head"><h3>Tháng 11 · 2026</h3><span>Thứ Năm, ngày 19</span></div>
+      <div class="cal-grid" id="calGrid" aria-label="Lịch tháng 11 năm 2026, đánh dấu ngày 19"></div>
+    </div>
+    <div class="count" id="count" aria-live="off">
+      <div><b id="cD">--</b><span>NGÀY</span></div>
+      <div><b id="cH">--</b><span>GIỜ</span></div>
+      <div><b id="cM">--</b><span>PHÚT</span></div>
+      <div><b id="cS">--</b><span>GIÂY</span></div>
+    </div>
+    <p class="count-note" id="countNote">đến giờ đón tiếp, 17:30 ngày 19/11/2026</p>
+  </section>
+
+  <!-- ===== Program ===== -->
+  <section class="program">
+    <div class="eyebrow"><svg><use href="#i-ab"/></svg>Chương trình</div>
+    <svg class="steth-art" viewBox="0 0 150 96" aria-hidden="true">
+      <circle cx="18" cy="8" r="3.5"/><circle cx="52" cy="8" r="3.5"/>
+      <path d="M18 12 V30 C18 46 52 46 52 30 V12"/>
+      <path d="M35 42 V52 C35 72 60 80 75 66"/>
+      <path d="M75 66 C68 58 60 52 60 44 C60 38 64 34 69 34 C72 34 74 36 75 38 C76 36 78 34 81 34 C86 34 90 38 90 44 C90 52 82 58 75 66 Z" class="hp"/>
+      <path d="M90 44 H104 L109 34 L116 56 L121 44 H146"/>
+    </svg>
+    <h2 class="title">Một buổi tối bên Thầy Cô</h2>
+    <ol class="prog">
+      <li>
+        <div class="time">17:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="what"><h3>Đón tiếp Thầy Cô</h3><p>Đến 18:00. Chụp ảnh lưu niệm, trò chuyện cùng học trò các khóa.</p></div>
+      </li>
+      <li>
+        <div class="time">18:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="what"><h3>Chương trình chính</h3><p>Đến 20:00.</p>
+          <div class="chips"><span>Văn nghệ</span><span>Trao quà tri ân</span><span>Liên hoan tiệc</span></div>
+        </div>
+      </li>
+      <li>
+        <div class="time">20:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="what"><h3>Kết thúc</h3><p>Ban tổ chức tiễn Thầy Cô ra về.</p></div>
+      </li>
+    </ol>
+    <p class="note">Ban tổ chức sẽ gửi chương trình chi tiết tới Thầy Cô sau.</p>
+  </section>
+
+  <svg class="ecg" viewBox="0 0 440 34" preserveAspectRatio="none" aria-hidden="true">
+    <path class="pulse" d="M0 17 H120 L128 17 L136 5 L146 30 L154 11 L160 17 H280 L288 17 L296 5 L306 30 L314 11 L320 17 H440" />
+  </svg>
+
+  <!-- ===== Venue ===== -->
+  <section class="place" id="place">
+    <div class="eyebrow"><svg><use href="#i-cross"/></svg>Địa điểm</div>
+    <div class="venue">
+      <div class="map" aria-hidden="true">
+        <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="150" fill="#e5f1ee"/>
+          <g stroke="#ffffff" stroke-linecap="round">
+            <path d="M-10 40 L410 70" stroke-width="10"/>
+            <path d="M-10 120 L410 104" stroke-width="7"/>
+            <path d="M210 -10 L196 160" stroke-width="18"/>
+            <path d="M80 -10 L120 160" stroke-width="6"/>
+            <path d="M330 -10 L300 160" stroke-width="6"/>
+          </g>
+          <path d="M210 -10 L196 160" stroke="#f1d79c" stroke-width="3" stroke-dasharray="8 7"/>
+          <rect x="226" y="80" width="54" height="16" rx="8" fill="#ffffff"/>
+          <text x="253" y="91.5" font-family="Be Vietnam Pro, sans-serif" font-size="8.5" text-anchor="middle" fill="#557572">Giải Phóng</text>
+          <circle cx="203" cy="78" r="22" fill="#0e7c77" opacity=".14"/>
+          <path d="M203 52 C192 52 185 60 185 69 C185 82 203 96 203 96 C203 96 221 82 221 69 C221 60 214 52 203 52 Z" fill="#0e7c77"/>
+          <circle cx="203" cy="69" r="6.5" fill="#ffffff"/>
+        </svg>
+      </div>
+      <div class="info">
+        <h3>Trung tâm Tiệc cưới &amp; Sự kiện Sun Palace</h3>
+        <p class="addr">1111 đường Giải Phóng, quận Hoàng Mai, Hà Nội</p>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Sun%20Palace%201111%20Gi%E1%BA%A3i%20Ph%C3%B3ng%20Ho%C3%A0ng%20Mai%20H%C3%A0%20N%E1%BB%99i" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>
+          Chỉ đường trên Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Album ===== -->
+  <section class="album" id="album">
+    <div class="eyebrow"><svg><use href="#i-micro"/></svg>Nhìn lại</div>
+    <h2 class="title">Ngày 20/11/2023</h2>
+    <p class="lead">Những khoảnh khắc từ lần gặp mặt trước. Năm nay chúng em mong lại được chụp cùng Thầy Cô.</p>
+    <div class="strip" id="strip"></div>
+    <p class="swipe-hint">Vuốt ngang để xem thêm · Chạm vào ảnh để phóng to</p>
+    <div class="grid2" id="grid2"></div>
+  </section>
+
+  <div style="padding:0 24px"><div class="medrow" aria-hidden="true"><svg><use href="#i-steth"/></svg><span class="dotsep"></span><svg><use href="#i-ab"/></svg><span class="dotsep"></span><svg><use href="#i-dna"/></svg><span class="dotsep"></span><svg><use href="#i-micro"/></svg><span class="dotsep"></span><svg><use href="#i-pill"/></svg><span class="dotsep"></span><svg><use href="#i-cross"/></svg></div></div>
+
+  <!-- ===== RSVP ===== -->
+  <section class="rsvp" id="rsvp">
+    <div class="eyebrow"><svg><use href="#i-pill"/></svg>Xác nhận tham dự</div>
+    <h2 class="title">Thầy Cô báo giúp chúng em nhé</h2>
+    <form id="rsvpForm" novalidate>
+      <label for="fName">Họ tên Thầy Cô
+        <input type="text" id="fName" name="name" autocomplete="name" placeholder="Ví dụ: PGS.TS Nguyễn Văn A" required>
+      </label>
+      <fieldset>
+        <legend>Thầy Cô có tham dự được không?</legend>
+        <div class="choice">
+          <input type="radio" id="fYes" name="attend" value="yes" checked><label for="fYes">Tôi sẽ tham dự</label>
+          <input type="radio" id="fNo" name="attend" value="no"><label for="fNo">Rất tiếc, tôi bận</label>
+        </div>
+      </fieldset>
+      <label for="fWish">Lời nhắn gửi học trò (không bắt buộc)
+        <textarea id="fWish" name="wish" placeholder="Đôi lời Thầy Cô muốn nhắn…"></textarea>
+      </label>
+      <button class="btn" type="submit" id="rsvpBtn">Gửi xác nhận</button>
+      <div class="result" id="rsvpResult" role="status">
+        <span id="rsvpMsg"></span>
+        <pre id="rsvpText"></pre>
+        <a class="btn ghost" id="zaloBtn" href="#" target="_blank" rel="noopener" hidden>Mở Zalo Ban tổ chức</a>
+      </div>
+    </form>
+  </section>
+
+  <!-- ===== Thanks ===== -->
+  <section class="thanks">
+    <div class="logos"><span class="logo"><img src="img/logo-ttdu.png" alt=""></span><span class="logo"><img src="img/logo-hmu.png" alt=""></span></div>
+    <div class="script">Tri ân Thầy Cô</div>
+    <p>Sự có mặt của Thầy Cô là món quà lớn nhất với chúng em. Kính chúc Thầy Cô luôn mạnh khỏe và hạnh phúc.</p>
+    <div class="hostline">Trung tâm Dị ứng – MDLS · Bệnh viện Bạch Mai<br>Bộ môn Dị ứng – MDLS · Trường Đại học Y Hà Nội</div>
+    <a class="btn ghost" href="#top">Về đầu thư mời</a>
+  </section>
+</main>
+
+<!-- Floating controls -->
+<div class="fab">
+  <button class="music" id="musicBtn" type="button" aria-pressed="false" aria-label="Bật nhạc nền">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+  </button>
+  <button class="flower" id="flowerBtn" type="button" aria-label="Tặng hoa Thầy Cô">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c1.7 0 3 1.5 3 3.2 0 .3 0 .5-.1.8.3-.1.6-.1.9-.1 1.7 0 3.2 1.3 3.2 3s-1.3 3-3 3.1c1.1.9 1.5 2.4.9 3.7-.6 1.5-2.4 2.2-3.9 1.5-.4-.2-.7-.4-1-.7-.3.3-.6.5-1 .7-1.5.7-3.3 0-3.9-1.5-.6-1.3-.2-2.8.9-3.7C5.3 12 4 10.7 4 9s1.5-3 3.2-3c.3 0 .6 0 .9.1C8 5.8 8 5.5 8 5.2 8 3.5 9.3 2 11 2h1zm0 6.2a2.3 2.3 0 100 4.6 2.3 2.3 0 000-4.6zM11 18h2v4h-2z"/></svg>
+    <span class="badge" id="flowerCount" hidden>0</span>
+  </button>
+</div>
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh">
+  <button class="close" type="button" id="lbClose" aria-label="Đóng">×</button>
+  <button class="nav prev" type="button" id="lbPrev" aria-label="Ảnh trước">‹</button>
+  <img id="lbImg" alt="">
+  <button class="nav next" type="button" id="lbNext" aria-label="Ảnh sau">›</button>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* ===== Cấu hình ===== */
+// Link riêng cho từng thầy cô: thêm dòng "ma-link": "Danh xưng + họ tên", rồi gửi link dạng ...#ma-link
+const GUESTS = {
+  // "co-lan": "PGS.TS Nguyễn Thị Lan",
+};
+// Số Zalo của Ban tổ chức để nhận xác nhận (để trống nếu chưa có)
+const BTC_ZALO = "";
+const EVENT_START = new Date("2026-11-19T17:30:00+07:00");
+
+const PHOTOS = [
+  { src: "img/group-all.jpg", alt: "Ảnh tập thể thầy cô và học trò, các thầy cô cầm hoa" },
+  { src: "img/stage.jpg", alt: "Các cô và học trò trên sân khấu lễ kỷ niệm" },
+  { src: "img/thayco.jpg", alt: "Bốn thầy cô chụp ảnh trước phông Ngày Nhà giáo Việt Nam" },
+  { src: "img/tanghoa.jpg", alt: "Trao hoa tri ân thầy" },
+  { src: "img/vannghe.jpg", alt: "Tiết mục văn nghệ của học trò" },
+  { src: "img/vannghe2.jpg", alt: "Thầy và trò cùng hát giao lưu" },
+  { src: "img/tiec.jpg", alt: "Thầy cô và học trò quanh bàn tiệc" },
+  { src: "img/group-small.jpg", alt: "Nhóm thầy cô và học trò trước phông lễ kỷ niệm" },
+  { src: "img/group-young.jpg", alt: "Các bác sĩ trẻ chụp ảnh lưu niệm" },
+  { src: "img/candid.jpg", alt: "Hai cô cười tươi bên bàn tiệc" },
+];
+
+/* ===== Tên khách mời ===== */
+(function () {
+  const key = decodeURIComponent((location.hash || "").slice(1));
+  if (key && GUESTS[key]) {
+    document.getElementById("guestName").textContent = GUESTS[key];
+    document.getElementById("fName").value = GUESTS[key];
+  }
+})();
+
+/* ===== Lịch ===== */
+(function () {
+  const grid = document.getElementById("calGrid");
+  const dows = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
+  let html = dows.map(d => `<div class="dow">${d}</div>`).join("");
+  const first = new Date(2026, 10, 1).getDay(); // 0 = CN
+  const offset = (first + 6) % 7;
+  for (let i = 0; i < offset; i++) html += "<div></div>";
+  for (let d = 1; d <= 30; d++) {
+    const dow = (offset + d - 1) % 7;
+    const cls = ["d", dow === 6 ? "sun" : "", d === 19 ? "hit" : ""].join(" ").trim();
+    html += `<div class="${cls}"${d === 19 ? ' aria-label="Ngày 19, ngày gặp mặt"' : ""}>${d}</div>`;
+  }
+  grid.innerHTML = html;
+})();
+
+/* ===== Đếm ngược ===== */
+(function () {
+  const el = id => document.getElementById(id);
+  const pad = n => String(n).padStart(2, "0");
+  function tick() {
+    let ms = EVENT_START - Date.now();
+    if (ms <= 0) {
+      ["cD", "cH", "cM", "cS"].forEach(i => el(i).textContent = "00");
+      el("countNote").textContent = ms > -9e6 ? "Buổi gặp mặt đang diễn ra" : "Cảm ơn Thầy Cô đã đến chung vui";
+      return;
+    }
+    const s = Math.floor(ms / 1000);
+    el("cD").textContent = pad(Math.floor(s / 86400));
+    el("cH").textContent = pad(Math.floor(s % 86400 / 3600));
+    el("cM").textContent = pad(Math.floor(s % 3600 / 60));
+    el("cS").textContent = pad(s % 60);
+  }
+  tick(); setInterval(tick, 1000);
+})();
+
+/* ===== Album + lightbox ===== */
+(function () {
+  const strip = document.getElementById("strip");
+  const grid = document.getElementById("grid2");
+  const mk = (p, i) => `<button type="button" data-i="${i}" aria-label="Phóng to: ${p.alt}"><img src="${p.src}" alt="${p.alt}" loading="lazy"></button>`;
+  strip.innerHTML = PHOTOS.slice(1, 7).map((p, k) => mk(p, k + 1)).join("");
+  grid.innerHTML = PHOTOS.slice(7).map((p, k) => mk(p, k + 7)).join("") + mk(PHOTOS[0], 0);
+  const lb = document.getElementById("lightbox"), img = document.getElementById("lbImg");
+  let cur = 0, last = null;
+  const show = i => { cur = (i + PHOTOS.length) % PHOTOS.length; img.src = PHOTOS[cur].src; img.alt = PHOTOS[cur].alt; };
+  const open = (i, from) => { last = from; show(i); lb.classList.add("open"); document.getElementById("lbClose").focus(); };
+  const close = () => { lb.classList.remove("open"); if (last) last.focus(); };
+  document.querySelectorAll("#strip button, #grid2 button").forEach(b => b.addEventListener("click", () => open(+b.dataset.i, b)));
+  document.getElementById("lbClose").onclick = close;
+  document.getElementById("lbPrev").onclick = () => show(cur - 1);
+  document.getElementById("lbNext").onclick = () => show(cur + 1);
+  lb.addEventListener("click", e => { if (e.target === lb) close(); });
+  document.addEventListener("keydown", e => {
+    if (!lb.classList.contains("open")) return;
+    if (e.key === "Escape") close();
+    if (e.key === "ArrowLeft") show(cur - 1);
+    if (e.key === "ArrowRight") show(cur + 1);
+  });
+  let x0 = null;
+  lb.addEventListener("touchstart", e => { x0 = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener("touchend", e => { if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) show(cur + (dx < 0 ? 1 : -1)); x0 = null; });
+})();
+
+/* ===== Toast ===== */
+function toast(msg) {
+  const t = document.getElementById("toast");
+  t.textContent = msg; t.classList.add("show");
+  clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove("show"), 2600);
+}
+
+/* ===== RSVP ===== */
+(function () {
+  const form = document.getElementById("rsvpForm");
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    const name = form.name.value.trim();
+    if (!name) { form.name.focus(); toast("Thầy Cô vui lòng nhập họ tên"); return; }
+    const yes = form.attend.value === "yes";
+    const lines = [
+      "XÁC NHẬN THAM DỰ GẶP MẶT TRI ÂN 19/11/2026",
+      "Họ tên: " + name,
+      yes ? "Tham dự: Có" : "Tham dự: Không tham dự được",
+    ];
+    const wish = form.wish.value.trim();
+    if (wish) lines.push("Lời nhắn: " + wish);
+    const text = lines.join("\n");
+    document.getElementById("rsvpText").textContent = text;
+    let copied = false;
+    try { await navigator.clipboard.writeText(text); copied = true; } catch (err) { copied = false; }
+    const zalo = document.getElementById("zaloBtn");
+    const msg = document.getElementById("rsvpMsg");
+    if (BTC_ZALO) {
+      zalo.href = "https://zalo.me/" + BTC_ZALO; zalo.hidden = false;
+      msg.textContent = (copied ? "Đã sao chép nội dung dưới đây. " : "") + "Thầy Cô bấm nút để mở Zalo và dán gửi Ban tổ chức.";
+    } else {
+      msg.textContent = (copied ? "Đã sao chép nội dung dưới đây. " : "") + "Thầy Cô gửi nội dung này cho Ban tổ chức qua Zalo hoặc tin nhắn.";
+    }
+    document.getElementById("rsvpResult").classList.add("show");
+    if (yes) burst(60);
+  });
+})();
+
+/* ===== Hoa rơi ===== */
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const cv = document.getElementById("petals"), ctx = cv.getContext("2d");
+let petals = [], raf = null;
+function sizeCanvas() { const r = window.devicePixelRatio || 1; cv.width = innerWidth * r; cv.height = innerHeight * r; ctx.setTransform(r, 0, 0, r, 0, 0); }
+sizeCanvas(); addEventListener("resize", sizeCanvas);
+const COLORS = ["#f4b6c2", "#f7d08a", "#ffffff", "#9fd8cf", "#e88fa3"];
+function burst(n) {
+  if (reduceMotion) return;
+  for (let i = 0; i < n; i++) petals.push({
+    x: Math.random() * innerWidth, y: -20 - Math.random() * innerHeight * .4,
+    r: 5 + Math.random() * 6, vy: 1 + Math.random() * 1.6, vx: -.6 + Math.random() * 1.2,
+    a: Math.random() * 6.28, va: -.05 + Math.random() * .1, sway: Math.random() * 6.28,
+    c: COLORS[i % COLORS.length], kind: Math.random() < .35 ? 1 : 0,
+  });
+  if (!raf) raf = requestAnimationFrame(step);
+}
+function drawPetal(p) {
+  ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.a); ctx.fillStyle = p.c;
+  if (p.kind) { // bông hoa 5 cánh nhỏ
+    for (let k = 0; k < 5; k++) { ctx.rotate(1.2566); ctx.beginPath(); ctx.ellipse(0, p.r * .55, p.r * .35, p.r * .6, 0, 0, 6.28); ctx.fill(); }
+    ctx.fillStyle = "#f2c14e"; ctx.beginPath(); ctx.arc(0, 0, p.r * .28, 0, 6.28); ctx.fill();
+  } else { ctx.beginPath(); ctx.ellipse(0, 0, p.r * .55, p.r, 0, 0, 6.28); ctx.fill(); }
+  ctx.restore();
+}
+function step() {
+  ctx.clearRect(0, 0, innerWidth, innerHeight);
+  petals.forEach(p => { p.sway += .03; p.x += p.vx + Math.sin(p.sway) * .6; p.y += p.vy; p.a += p.va; drawPetal(p); });
+  petals = petals.filter(p => p.y < innerHeight + 30);
+  raf = petals.length ? requestAnimationFrame(step) : null;
+  if (!raf) ctx.clearRect(0, 0, innerWidth, innerHeight);
+}
+(function () {
+  const btn = document.getElementById("flowerBtn"), badge = document.getElementById("flowerCount");
+  let n = 0;
+  btn.addEventListener("click", () => {
+    n++; badge.textContent = n; badge.hidden = false;
+    burst(28);
+    if (n === 1) toast("Một bông hoa gửi Thầy Cô");
+  });
+})();
+
+/* ===== Nhạc nền: giai điệu piano nhẹ tạo bằng Web Audio ===== */
+(function () {
+  const btn = document.getElementById("musicBtn");
+  let ac = null, master = null, timer = null, nextT = 0, stepI = 0, on = false;
+  // Vòng hợp âm C – Am – F – G, rải nốt chậm
+  const N = { C3: 130.81, G3: 196, A3: 220, F3: 174.61, B3: 246.94, C4: 261.63, D4: 293.66, E4: 329.63, F4: 349.23, G4: 392, A4: 440, B4: 493.88, C5: 523.25, D5: 587.33, E5: 659.25 };
+  const bars = [
+    ["C3", "G3", "C4", "E4", "G4", "E4", "C4", "G3"],
+    ["A3", "E4", "A4", "C5", "E5", "C5", "A4", "E4"],
+    ["F3", "C4", "F4", "A4", "C5", "A4", "F4", "C4"],
+    ["G3", "D4", "G4", "B4", "D5", "B4", "G4", "D4"],
+  ];
+  const seq = bars.flat(), beat = 0.42;
+  function note(f, t, vel) {
+    const o = ac.createOscillator(), o2 = ac.createOscillator(), g = ac.createGain();
+    o.type = "sine"; o2.type = "triangle"; o.frequency.value = f; o2.frequency.value = f * 2;
+    const g2 = ac.createGain(); g2.gain.value = .18;
+    o.connect(g); o2.connect(g2); g2.connect(g); g.connect(master);
+    g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(vel, t + .02); g.gain.exponentialRampToValueAtTime(.0008, t + 2.4);
+    o.start(t); o2.start(t); o.stop(t + 2.5); o2.stop(t + 2.5);
+  }
+  function schedule() {
+    while (nextT < ac.currentTime + .4) {
+      const k = stepI % seq.length;
+      note(N[seq[k]], nextT, k % 8 === 0 ? .22 : .13);
+      nextT += beat; stepI++;
+    }
+  }
+  btn.addEventListener("click", async () => {
+    try {
+      if (!ac) {
+        ac = new (window.AudioContext || window.webkitAudioContext)();
+        master = ac.createGain(); master.gain.value = .5;
+        const lp = ac.createBiquadFilter(); lp.type = "lowpass"; lp.frequency.value = 2400;
+        master.connect(lp); lp.connect(ac.destination);
+      }
+      on = !on;
+      if (on) { await ac.resume(); nextT = ac.currentTime + .05; timer = setInterval(schedule, 100); }
+      else { clearInterval(timer); await ac.suspend(); }
+      btn.classList.toggle("on", on); btn.setAttribute("aria-pressed", on);
+      btn.setAttribute("aria-label", on ? "Tắt nhạc nền" : "Bật nhạc nền");
+    } catch (err) { toast("Trình duyệt này chưa phát được nhạc"); }
+  });
+})();
+</script>
+</body>
+</html>
