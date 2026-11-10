@@ -266,6 +266,8 @@ section { padding: 44px 24px; position: relative; display: grid; gap: 18px; }
 .opener .logos2 { display: flex; gap: 14px; }
 .opener .logos2 .logo { margin: 0; }
 .opener .script { font-size: 60px; line-height: 1; }
+.opener .from { margin: 2px 0 -4px; font-family: var(--display); font-size: clamp(15px, 4.6vw, 18.5px); line-height: 1.35; white-space: nowrap; font-weight: 500; color: var(--teal); }
+.opener .from span { display: block; margin-bottom: 4px; font-family: var(--body); font-size: 12.5px; letter-spacing: .18em; text-transform: uppercase; font-weight: 500; color: var(--muted); }
 .opener .to { font-size: 15px; color: var(--muted); }
 .opener .to strong { display: block; font-family: var(--display); font-style: italic; font-weight: 500; font-size: 24px; color: var(--ink); }
 .opener .occ { font-family: var(--display); font-size: 21px; line-height: 1.3; color: var(--ink); }
@@ -470,6 +472,7 @@ canvas#petals { position: fixed; inset: 0; width: 100%; height: 100%; pointer-ev
 <div class="opener" id="opener" role="dialog" aria-modal="true" aria-label="Mở thư mời">
   <div class="opener-card">
     <div class="logos2"><span class="logo"><img src="img/logo-ttdu.png" alt="Logo Trung tâm Dị ứng – Miễn dịch lâm sàng"></span><span class="logo"><img src="img/logo-hmu.png" alt="Logo Trường Đại học Y Hà Nội"></span></div>
+    <p class="from"><span>Học viên các thế hệ</span>Chuyên ngành Dị ứng – Miễn dịch lâm sàng</p>
     <div class="script">Thư mời</div>
     <p class="to">Kính mời<strong id="openerName">Quý Thầy Cô<br>và các thế hệ học viên</strong></p>
     <p class="occ">Kỷ niệm 44 năm<br>Ngày Nhà giáo Việt Nam</p>
